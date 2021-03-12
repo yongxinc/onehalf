@@ -1,0 +1,5 @@
+todo-簡單的註冊功能(把帳密寫進sqlite資料庫中)->按下註冊->跳到註冊頁面->將資料存入資料庫
+todo-爬蟲：可以輕易取得標題、敘述、圖片等呈現商品時需要的資訊(放在資料夾beautifulsoup裡面)
+todo-輸入商品序號可以查到相關資料的頁面(申請頁面)(member/seller/apply)
+todo-呈現相關類別的商品頁(category.html)(goodspage是用來呈現商品個人(?)頁面的)
+todo-把資料庫移到gcp的sql

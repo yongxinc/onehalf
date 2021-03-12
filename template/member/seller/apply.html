@@ -1,0 +1,21 @@
+<!--apply.html-->
+{%extends 'member/base/memberbase.html'%}
+{%block headmessage%}
+<p style='font-family: 微軟正黑體;font-size: 14pt;font-weight: bold;'>
+    上架申請
+</p>
+{% endblock %}
+
+{%block content%}
+<form name='apply' action='/member/seller/apply' method='GET'>
+    <label for='uniqlo_id'>UNIQLO商品序號：</label>
+    <input id='uniqlo_id' type='text' name='uniqlo_id'>
+    <input type='submit' value='送出'>
+    <input type='reset' value='清除重填'>
+</form>
+
+{%if itemexist %}
+你剛剛輸入了{{uniqlo_id}}
+{%endif%}
+
+{% endblock %}

@@ -1,0 +1,17 @@
+<!--goodspage.html-->
+{%extends 'base.html'%}
+{%block headmessage%}
+<p style='font-family: 微軟正黑體;font-size: 14pt;font-weight: bold;'>
+    {{UQItem.UNIQLOTitle}}
+</p>
+{% endblock %}
+
+{%block content%}
+<p style='font-family: 微軟正黑體;font-size: 12pt;font-weight: plain;'>
+    <img src={{UQItem.UNIQLOImage}} width='380' /><br><br><br>
+    {{UQItem.Description|safe}}<br>
+
+</p>
+
+<a href='/'>回首頁</a>
+{% endblock %}
