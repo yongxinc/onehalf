@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 
 import os
 from oscar.defaults import *
+from django.utils.translation import gettext_lazy as _
+
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -181,9 +183,13 @@ OSCAR_SHOP_TAGLINE = 'UNIQLO二手衣專賣店'
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
 
-LANGUAGE_CODE = 'zh-Hant'
+LANGUAGE_CODE = 'zh-TW'
 
-
+LANGUAGES = [
+('en-US', 'English'),
+('zh-Hans', '简体中文'),
+('ZH-TW', '繁體中文'),
+]
 TIME_ZONE = 'Asia/Taipei'
 
 USE_I18N = True
